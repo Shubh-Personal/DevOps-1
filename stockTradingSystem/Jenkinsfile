@@ -14,7 +14,7 @@ pipeline{
             steps{
                 echo "===== Building docker file ====="
                 sh "docker build -t stock-trading-app ."
-                sh "docker tag stock-trading-app shubhpatel14/stock-trading-app:${BUILD_ID}"
+                sh "docker tag stock-trading-app shubhpatel14/stock-trading-app"
             }
         }
     }
