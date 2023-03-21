@@ -6,8 +6,7 @@
 # Backend Installation:
 
 1.	Clone the backend system into a directory on your system using the below Github link.
-2.	via SSH: > git clone git@github.com:jashmin3998/Stock-Trading-System.git 
-3.	via HTTPS: > git clone https://github.com/jashmin3998/Stock-Trading-System.git 
+3.	via HTTPS: > git clone https://github.com/Shubh-Personal/DevOps-1.git 
 4.	change the database connection in application.properties file.
 5.	Default server port is 8080. If you want to change that then just change server.port property from application.properties file.
 6.	Install java and maven in your system.
