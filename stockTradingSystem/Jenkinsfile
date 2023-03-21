@@ -6,7 +6,7 @@ pipeline{
             steps{
                 echo "===== Building project ====="
                 sh "cd stockTradingSystem"
-                sh "mvn clean package -DskipTests=true"
+                sh "./mvnw clean package -DskipTests=true"
             }
         }
         stage('Build docker image'){
