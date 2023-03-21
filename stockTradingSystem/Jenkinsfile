@@ -5,8 +5,9 @@ pipeline{
         stage('Build project'){
             steps{
                 echo "===== Building project ====="
-                sh "cd stockTradingSystem"
+
                 sh "ls"
+                sh "cd stockTradingSystem"
                 sh "mvnw clean package -DskipTests=true"
             }
         }
