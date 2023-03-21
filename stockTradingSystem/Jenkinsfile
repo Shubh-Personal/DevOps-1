@@ -5,6 +5,7 @@ pipeline{
         stage('Build project'){
             steps{
                 echo "===== Building project ====="
+                sh "cd stockTradingSystem"
                 sh "mvn clean package -DskipTests=true"
             }
         }
