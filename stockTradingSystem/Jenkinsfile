@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    environment{
-        project: docker_backend
-    }
+
     stages{
         stage('Build project'){
             steps{
