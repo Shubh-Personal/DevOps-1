@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    environment{
+        project=docker_backend
+    }
+    stages{
+        stage('Build project'){
+            steps{
+                echo "===== Building project ====="
+                sh "mvn clean package -DskipTests=true"
+            }
+        }
+        stage('Build docker image'){
+            steps{
+                echo "===== Building docker file ====="
+                sh "docker build -t stock-trading-app ."
+                sh "docker tag stock-trading-app shubhpatel14/stock-trading-app:${BUILD_ID}"
+            }
+        }
+    }
+    post{
+        always{
+            echo "Stock trading application Job done"
+        }
+    }
+}
