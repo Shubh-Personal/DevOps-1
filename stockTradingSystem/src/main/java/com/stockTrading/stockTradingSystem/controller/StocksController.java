@@ -72,7 +72,6 @@ public class StocksController {
 
 
     //display portfolio
-
     @GetMapping(path="portfolio", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Object> getPortfolioByUsername(@RequestParam String username){
         return transactionDtlService.getPortfolioByUsername(username);

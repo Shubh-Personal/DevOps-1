@@ -24,8 +24,6 @@ public class MarketScheduleController {
     }
     @PostMapping(path = "/add")
     public Response addNewSchedule(@RequestBody MarketSchedule marketSchedule){
-
-
         return marketScheduleService.addSchedule(marketSchedule);
     }
 

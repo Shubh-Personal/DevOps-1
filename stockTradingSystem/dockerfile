@@ -1,0 +1,4 @@
+FROM openjdk:18-alpine
+WORKDIR /stock-app
+ADD target/stock-trading-backend.jar ./stock-trading-backend.jar
+CMD ["java","-jar","./stock-trading-backend.jar"]
