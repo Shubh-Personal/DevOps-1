@@ -21,3 +21,6 @@
 # Architecture of Full Stack Project:
 
 ![image](https://user-images.githubusercontent.com/90228721/161124275-a4f81e1b-710b-4a55-827a-08d9adc7f4b8.png)
+
+# Project Credits:
+- https://github.com/jashmin3998/Stock-Trading-System
