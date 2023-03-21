@@ -20,7 +20,7 @@ pipeline{
     }
     post{
         always{
-            echo "Stock trading application Job done"
+            echo "Stock trading application Job done!"
         }
     }
 }
